@@ -12,6 +12,10 @@ window, inputbar, mode-switcher, button, listview, element, scrollbar {
 	border-radius: 8;
 }
 
+window {
+	//border-radius: 0;
+}
+
 mainbox {
 	margin: 3px;
 	spacing: 4px;
