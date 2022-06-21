@@ -1,0 +1,70 @@
+entry {
+	placeholder: "Type here";
+}
+
+window, inputbar, mode-switcher, button, listview, element, scrollbar {
+	border-radius: 8;
+}
+
+mainbox {
+	spacing: 4px;
+}
+
+scrollbar {
+	border: 1px;
+	border-color: grey;
+}
+
+inputbar {
+	border: 1px 1px 0 1px;
+	border-color: grey;
+	padding: 4px;
+	//margin: 2px 0;
+}
+
+listview {
+	//border-radius: 8px 0 0 8px;
+	border: 1px 0 1px 1px;
+	border-color: grey;
+	padding: 4px 0 4px 4px;
+	lines: 5;
+	columns: 2;
+	spacing: 4px;
+	//fixed-columns: true;
+}
+
+element {
+	padding: 4px 6px;
+	children: [ element-icon, element-text ];
+}
+
+element-icon {
+	padding: 0 10px 0 0;
+	size: 32px;
+}
+
+element-text {
+	vertical-align: 0.5;
+	//horizontal-align: 0.5;
+}
+
+mode-switcher {
+	border: 0 1px 1px 1px;
+	border-color: grey;
+	padding: 4px;
+}
+
+button {
+	padding: 2px;
+}
+
+configuration {
+	modi: "combi,calc,filebrowser,emoji";
+	combi-modi: "drun,window,ssh";
+	font: "Fira Mono 12";
+	show-icons: true;
+	icon-theme: "Papirus";
+	sidebar-mode: true;
+	kb-remove-word-back: "Control+Alt+h,Control+BackSpace";
+	kb-remove-word-forward: "Control+Alt+d,Control+Delete";
+}
