@@ -1,3 +1,9 @@
+@theme "gruvbox-dark-soft"
+
+* {
+	my-border-color: #555555;
+}
+
 entry {
 	placeholder: "Type here";
 }
@@ -7,17 +13,18 @@ window, inputbar, mode-switcher, button, listview, element, scrollbar {
 }
 
 mainbox {
+	margin: 3px;
 	spacing: 4px;
 }
 
 scrollbar {
 	border: 1px;
-	border-color: grey;
+	border-color: @my-border-color;
 }
 
 inputbar {
 	border: 1px 1px 0 1px;
-	border-color: grey;
+	border-color: @my-border-color;
 	padding: 4px;
 	//margin: 2px 0;
 }
@@ -25,7 +32,7 @@ inputbar {
 listview {
 	//border-radius: 8px 0 0 8px;
 	border: 1px 0 1px 1px;
-	border-color: grey;
+	border-color: @my-border-color;
 	padding: 4px 0 4px 4px;
 	lines: 5;
 	columns: 2;
@@ -50,7 +57,7 @@ element-text {
 
 mode-switcher {
 	border: 0 1px 1px 1px;
-	border-color: grey;
+	border-color: @my-border-color;
 	padding: 4px;
 }
 
