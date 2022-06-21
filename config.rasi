@@ -2,14 +2,26 @@
 
 * {
 	my-border-color: #555555;
+	my-lines: 5;
+	my-columns: 2;
+	//separatorcolor: #00000000;
 }
 
 entry {
 	placeholder: "Type here";
 }
 
-window, inputbar, mode-switcher, button, listview, element, scrollbar {
+window, inputbar, mode-switcher, button, listview, element, scrollbar, textbox {
 	border-radius: 8;
+}
+
+textbox {
+	font: "Fira Mono 11";
+	margin: 0 12px;
+	padding: 4px 8px;
+	foreground-color: @gruvbox-dark-fg1;
+	background-color: @gruvbox-dark-bg1;
+	//horizontal-align: 0.5;
 }
 
 window {
@@ -38,15 +50,19 @@ listview {
 	border: 1px 0 1px 1px;
 	border-color: @my-border-color;
 	padding: 4px 0 4px 4px;
-	lines: 5;
-	columns: 2;
+	lines: @my-lines;
+	columns: @my-columns;
 	spacing: 4px;
 	//fixed-columns: true;
 }
 
 element {
 	padding: 4px 6px;
-	children: [ element-icon, element-text ];
+	//children: [ element-icon, element-text ];
+}
+
+element-text {
+	//margin: 0 0 0 0px; 
 }
 
 element-icon {
@@ -74,8 +90,11 @@ configuration {
 	combi-modi: "drun,window,ssh";
 	font: "Fira Mono 12";
 	show-icons: true;
+	scroll-method: 0;
 	icon-theme: "Papirus";
 	sidebar-mode: true;
+	display-drun: "🚀";
+	display-window: "💻";
 	kb-remove-word-back: "Control+Alt+h,Control+BackSpace";
 	kb-remove-word-forward: "Control+Alt+d,Control+Delete";
 }
