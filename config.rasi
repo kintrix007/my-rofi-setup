@@ -7,11 +7,11 @@
 	//separatorcolor: #00000000;
 }
 
-entry {
-	placeholder: "Type here";
+window {
+	border-radius: 8;
 }
 
-window, inputbar, mode-switcher, button, listview, element, scrollbar, textbox {
+inputbar, mode-switcher, button, listview, element, scrollbar, textbox {
 	border-radius: 8;
 }
 
@@ -22,10 +22,6 @@ textbox {
 	foreground-color: @gruvbox-dark-fg1;
 	background-color: @gruvbox-dark-bg1;
 	//horizontal-align: 0.5;
-}
-
-window {
-	//border-radius: 0;
 }
 
 mainbox {
@@ -43,6 +39,10 @@ inputbar {
 	border-color: @my-border-color;
 	padding: 4px;
 	//margin: 2px 0;
+}
+
+entry {
+	placeholder: "Type here";
 }
 
 listview {
