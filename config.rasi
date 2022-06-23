@@ -9,6 +9,8 @@
 
 window {
 	border-radius: 0;
+	width: 640px;
+	//width: 34%; // For 1080p
 }
 
 inputbar, mode-switcher, button, listview, element, scrollbar, textbox {
@@ -86,7 +88,7 @@ button {
 }
 
 configuration {
-	modi: "combi,calc,filebrowser,emoji";
+	modi: "combi,calc,filebrowser";
 	combi-modi: "drun,window,ssh,emoji";
 	font: "Fira Mono 12";
 	show-icons: true;
