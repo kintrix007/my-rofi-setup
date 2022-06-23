@@ -87,7 +87,7 @@ button {
 
 configuration {
 	modi: "combi,calc,filebrowser,emoji";
-	combi-modi: "drun,window,ssh";
+	combi-modi: "drun,window,ssh,emoji";
 	font: "Fira Mono 12";
 	show-icons: true;
 	scroll-method: 0;
