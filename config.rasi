@@ -5,6 +5,10 @@
 	my-lines: 5;
 	my-columns: 2;
 	//separatorcolor: #00000000;
+	active-foreground: @normal-foreground;
+	active-background: @normal-background;
+	selected-active-foreground: @selected-normal-foreground;
+	selected-active-background: @selected-normal-background;
 }
 
 window {
@@ -89,14 +93,16 @@ button {
 
 configuration {
 	modi: "combi,calc,filebrowser";
-	combi-modi: "drun,window,ssh,emoji";
+	combi-modi: "window,drun,ssh,emoji";
 	font: "Fira Mono 12";
 	show-icons: true;
+	// window-thumbnail: true;
 	scroll-method: 0;
 	icon-theme: "Papirus";
 	sidebar-mode: true;
 	display-drun: "🚀";
 	display-window: "💻";
+	display-emoji: ":)";
 	kb-remove-word-back: "Control+Alt+h,Control+BackSpace";
 	kb-remove-word-forward: "Control+Alt+d,Control+Delete";
 }
